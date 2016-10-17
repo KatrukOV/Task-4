@@ -8,27 +8,7 @@ import java.util.List;
 
 public interface DisciplineDAO extends IDAO<Discipline> {
 
-	public Discipline get(String title) throws DaoException;
+  Discipline get(String title) throws DaoException;
 
-    public List<Discipline> getAllDisciplinesOfTeacher(Human teacher) throws DaoException;
-
-
-//	public Map<String, String> collectMarksAndFeedbackFor(Human student);
-
-//	public List<Discipline> getAllAvailableDisciplinesFor(Human student);
-//
-//	public List<Discipline> getAllDisciplinesForStudent(Human human);
-
-
-
-//	public String getFeedBackForStudent(Human student, Discipline discipline, Connection connection);
-//
-//	public String getMarkForStudent(Human student, Discipline discipline, Connection connection);
-//
-//	public boolean saveFeedback(Discipline discipline, Human student, String mark, String feedback);
-
-//	public boolean enroll(Discipline discipline, Human human);
-//
-//	public boolean unEnroll(Discipline discipline, Human human);
-
+  List<Discipline> getAllDisciplinesOfTeacher(Human teacher) throws DaoException;
 }

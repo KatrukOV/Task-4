@@ -8,10 +8,10 @@ import java.util.List;
 
 public interface StudentDAO extends HumanDAO {
 
-    public List<Human> getAllStudentsFor(Discipline discipline) throws DaoException;
+  List<Human> getStudentsByDiscipline(Discipline discipline) throws DaoException;
 
-	public void setContractForStudent(Human student, boolean contract) throws DaoException;
+  void setContractForStudent(Human student, boolean contract) throws DaoException;
 
-	public boolean getContractForStudent(Human student) throws DaoException;
+  boolean getContractForStudent(Human student) throws DaoException;
 
 }

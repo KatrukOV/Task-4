@@ -4,19 +4,20 @@ import java.io.Serializable;
 
 public class Model implements Serializable {
 
-	protected int id;
+  protected int id;
 
-	public Model() {}
+  public Model() {
+  }
 
-	public Model(int id) {
-		this.id = id;
-	}
+  public Model(int id) {
+    this.id = id;
+  }
 
-	public int getId() {
-		return id;
-	}
+  public int getId() {
+    return id;
+  }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+  public void setId(int id) {
+    this.id = id;
+  }
 }

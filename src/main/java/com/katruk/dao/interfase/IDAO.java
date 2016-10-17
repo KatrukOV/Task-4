@@ -7,13 +7,14 @@ import java.util.List;
 
 
 public interface IDAO<T extends Model> {
-	List<T> getAll() throws DaoException;
 
-	T get(int id) throws DaoException;
+  List<T> getAll() throws DaoException;
 
-	void create(T value) throws DaoException;
+  T get(int id) throws DaoException;
 
-	void remove(T value) throws DaoException;
+  void create(T value) throws DaoException;
 
-	void update(T value) throws DaoException;
+  void remove(T value) throws DaoException;
+
+  void update(T value) throws DaoException;
 }

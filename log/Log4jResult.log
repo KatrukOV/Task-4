@@ -56,7 +56,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLTransactionRollbackException: Lock wait tim
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.create(DisciplineDataBaseDAO.java:82)
-	at com.katruk.ui.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
+	at com.katruk.domain.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -94,7 +94,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLTransactionRollbackException: Lock wait tim
 2016-01-31 03:47:38 ERROR AddDisciplineCommand:47 - Unable to create a discipline
 com.katruk.dao.exceptions.DaoException: Can't create Discipline
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.create(DisciplineDataBaseDAO.java:86)
-	at com.katruk.ui.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
+	at com.katruk.domain.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -176,7 +176,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.create(DisciplineDataBaseDAO.java:82)
-	at com.katruk.ui.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
+	at com.katruk.domain.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -214,7 +214,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 04:10:15 ERROR AddDisciplineCommand:47 - Unable to create a discipline
 com.katruk.dao.exceptions.DaoException: Can't create Discipline
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.create(DisciplineDataBaseDAO.java:86)
-	at com.katruk.ui.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
+	at com.katruk.domain.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -323,7 +323,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.create(DisciplineDataBaseDAO.java:82)
-	at com.katruk.ui.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
+	at com.katruk.domain.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -361,7 +361,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 04:38:09 ERROR AddDisciplineCommand:47 - Unable to create a discipline
 com.katruk.dao.exceptions.DaoException: Can't create Discipline
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.create(DisciplineDataBaseDAO.java:86)
-	at com.katruk.ui.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
+	at com.katruk.domain.commands.AddDisciplineCommand.execute(AddDisciplineCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -459,7 +459,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2016-01-31 05:19:51 ERROR SetRoleCommand:52 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:172)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:42)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -504,7 +504,7 @@ java.lang.NullPointerException
 2016-01-31 05:20:16 ERROR SetRoleCommand:52 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:172)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:42)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -586,7 +586,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'login
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:81)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -639,7 +639,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:67)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -677,7 +677,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 18:45:15 ERROR RegistrationCommand:85 - Filter: error detected -> %s
 com.katruk.dao.exceptions.DaoException: Can't create Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:70)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -737,7 +737,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:84)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -787,7 +787,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:67)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -822,7 +822,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 19:02:13 ERROR RegistrationCommand:85 - error detected
 com.katruk.dao.exceptions.DaoException: Can't create Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:70)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -879,7 +879,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:84)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -929,7 +929,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:67)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -964,7 +964,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 19:22:37 ERROR RegistrationCommand:85 - error detected
 com.katruk.dao.exceptions.DaoException: Can't create Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:70)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:53)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1031,7 +1031,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:84)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1081,7 +1081,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:67)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1116,7 +1116,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 19:45:07 ERROR RegistrationCommand:89 - error detected
 com.katruk.dao.exceptions.DaoException: Can't create Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:70)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1171,7 +1171,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:86)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1221,7 +1221,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:69)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1256,7 +1256,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 2016-01-31 20:13:36 ERROR RegistrationCommand:89 - error detected
 com.katruk.dao.exceptions.DaoException: Can't create Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:72)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:57)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1311,7 +1311,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:87)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1352,7 +1352,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-01-31 20:34:06 ERROR SetRoleCommand:52 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:171)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:42)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1704,7 +1704,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 2016-01-31 21:33:13 ERROR StudentDataBaseDAO:90 - Can't get Contract for Student
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:88)
-	at com.katruk.ui.commands.LoginCommand.execute(LoginCommand.java:69)
+	at com.katruk.domain.commands.LoginCommand.execute(LoginCommand.java:69)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1817,7 +1817,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 2016-01-31 21:34:02 ERROR StudentDataBaseDAO:90 - Can't get Contract for Student
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:88)
-	at com.katruk.ui.commands.LoginCommand.execute(LoginCommand.java:69)
+	at com.katruk.domain.commands.LoginCommand.execute(LoginCommand.java:69)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1855,7 +1855,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:88)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -1891,7 +1891,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:91)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2008,7 +2008,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 2016-01-31 21:41:34 ERROR StudentDataBaseDAO:94 - Can't get Contract for Student
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
-	at com.katruk.ui.commands.LoginCommand.execute(LoginCommand.java:69)
+	at com.katruk.domain.commands.LoginCommand.execute(LoginCommand.java:69)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2047,7 +2047,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2083,7 +2083,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:95)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2124,7 +2124,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-01-31 21:47:34 ERROR StudentDataBaseDAO:94 - Can't get Contract for Student
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
-	at com.katruk.ui.commands.LoginCommand.execute(LoginCommand.java:69)
+	at com.katruk.domain.commands.LoginCommand.execute(LoginCommand.java:69)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2162,7 +2162,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2198,7 +2198,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:95)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2240,7 +2240,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-01-31 21:51:55 ERROR StudentDataBaseDAO:94 - Can't get Contract for Student
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
-	at com.katruk.ui.commands.LoginCommand.execute(LoginCommand.java:69)
+	at com.katruk.domain.commands.LoginCommand.execute(LoginCommand.java:69)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2278,7 +2278,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2314,7 +2314,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:95)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2440,7 +2440,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:92)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2476,7 +2476,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:95)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2515,7 +2515,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-01-31 22:02:29 INFO  AuthVerification:45 - Unauthorized access to http://localhost:8080/dispatcher. Denied. Redirecting to login page...
 2016-01-31 22:02:35 ERROR RedirectToDeclaredDisciplinesCommand:39 - show all declared Disciplines
 java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
-	at com.katruk.ui.commands.redirect.RedirectToDeclaredDisciplinesCommand.execute(RedirectToDeclaredDisciplinesCommand.java:27)
+	at com.katruk.domain.commands.redirect.RedirectToDeclaredDisciplinesCommand.execute(RedirectToDeclaredDisciplinesCommand.java:27)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -2550,7 +2550,7 @@ java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cas
 2016-01-31 22:02:35 INFO  AuthVerification:35 - Received a request from user god god god to http://localhost:8080/dispatcher
 2016-01-31 22:02:36 ERROR RedirectToDeclaredDisciplinesCommand:39 - show all declared Disciplines
 java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
-	at com.katruk.ui.commands.redirect.RedirectToDeclaredDisciplinesCommand.execute(RedirectToDeclaredDisciplinesCommand.java:27)
+	at com.katruk.domain.commands.redirect.RedirectToDeclaredDisciplinesCommand.execute(RedirectToDeclaredDisciplinesCommand.java:27)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -2680,7 +2680,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:60)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2715,7 +2715,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 2016-01-31 22:03:36 ERROR RegistrationCommand:96 - error detected
 com.katruk.dao.exceptions.DaoException: Can't set Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:64)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2851,7 +2851,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:113)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -2887,7 +2887,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Contract for Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.getContractForStudent(StudentDataBaseDAO.java:116)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:49)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3005,7 +3005,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 2016-01-31 22:41:51 INFO  AuthVerification:35 - Received a request from user god god god to http://localhost:8080/dispatcher
 2016-01-31 22:41:59 ERROR RevokedCommand:43 - Can't revoked discipline
 java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
-	at com.katruk.ui.commands.seter.status.RevokedCommand.execute(RevokedCommand.java:30)
+	at com.katruk.domain.commands.seter.status.RevokedCommand.execute(RevokedCommand.java:30)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3059,7 +3059,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.isContractForStudent(StudentDataBaseDAO.java:92)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:53)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3095,7 +3095,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 com.katruk.dao.exceptions.DaoException: have not Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.isContractForStudent(StudentDataBaseDAO.java:99)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:53)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3153,7 +3153,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have a
 2016-01-31 22:58:47 ERROR SetRoleCommand:55 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:172)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:45)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3210,7 +3210,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.isContractForStudent(StudentDataBaseDAO.java:95)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:53)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3246,7 +3246,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 com.katruk.dao.exceptions.DaoException: have not Student
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.isContractForStudent(StudentDataBaseDAO.java:103)
 	at com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO.setContractForStudent(StudentDataBaseDAO.java:53)
-	at com.katruk.ui.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
+	at com.katruk.domain.commands.RegistrationCommand.execute(RegistrationCommand.java:62)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3308,7 +3308,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have a
 2016-02-01 00:02:40 ERROR SetRoleCommand:55 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:172)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:45)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3356,7 +3356,7 @@ java.lang.NullPointerException
 2016-02-01 00:12:12 ERROR SetRoleCommand:44 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:172)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:34)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:34)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3401,7 +3401,7 @@ java.lang.NullPointerException
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:48)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:36)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:36)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3451,7 +3451,7 @@ java.lang.NullPointerException
 2016-02-01 00:39:13 ERROR SetRoleCommand:45 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:172)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:35)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3500,7 +3500,7 @@ java.lang.NullPointerException
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:48)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:36)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:36)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3545,7 +3545,7 @@ java.lang.NullPointerException
 2016-02-01 00:56:05 ERROR SetRoleCommand:48 - Unable set role for human
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO.setRole(HumanDataBaseDAO.java:173)
-	at com.katruk.ui.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:38)
+	at com.katruk.domain.commands.seter.SetRoleCommand.execute(SetRoleCommand.java:38)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3587,7 +3587,7 @@ java.lang.NullPointerException
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:48)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:36)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:36)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3659,7 +3659,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:49)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3695,7 +3695,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 com.katruk.dao.exceptions.DaoException: Can't get position for Teacher
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:55)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3763,7 +3763,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:49)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3799,7 +3799,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 com.katruk.dao.exceptions.DaoException: Can't get position for Teacher
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.getPositionForTeacher(TeacherDataBaseDAO.java:55)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:29)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -3970,7 +3970,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5094)
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:37)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4005,7 +4005,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 2016-02-01 01:29:03 ERROR SetPositionCommand:44 - Unable set position for teacher
 com.katruk.dao.exceptions.DaoException: Can't set position for Teacher
 	at com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO.setPositionForTeacher(TeacherDataBaseDAO.java:40)
-	at com.katruk.ui.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
+	at com.katruk.domain.commands.seter.SetPositionCommand.execute(SetPositionCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4124,7 +4124,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2016-02-01 03:33:33 ERROR RedirectToTeacherDisciplinesCommand:43 - Unable to show all teacher disciplines
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getAllDisciplinesOfTeacher(DisciplineDataBaseDAO.java:132)
-	at com.katruk.ui.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
+	at com.katruk.domain.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -4162,7 +4162,7 @@ java.lang.NullPointerException
 2016-02-01 03:33:39 ERROR RedirectToTeacherDisciplinesCommand:43 - Unable to show all teacher disciplines
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getAllDisciplinesOfTeacher(DisciplineDataBaseDAO.java:132)
-	at com.katruk.ui.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
+	at com.katruk.domain.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -4247,7 +4247,7 @@ java.lang.NullPointerException
 2016-02-01 11:05:55 ERROR RedirectToTeacherDisciplinesCommand:44 - Unable to show all teacher disciplines
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getAllDisciplinesOfTeacher(DisciplineDataBaseDAO.java:132)
-	at com.katruk.ui.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
+	at com.katruk.domain.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -4279,7 +4279,7 @@ java.lang.NullPointerException
 2016-02-01 11:05:57 ERROR RedirectToTeacherDisciplinesCommand:44 - Unable to show all teacher disciplines
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getAllDisciplinesOfTeacher(DisciplineDataBaseDAO.java:132)
-	at com.katruk.ui.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
+	at com.katruk.domain.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -4318,7 +4318,7 @@ java.lang.NullPointerException
 2016-02-01 11:21:21 INFO  EncodingFilter:22 - Set encoding - UTF-8
 2016-02-01 11:21:25 ERROR RedirectToProfileCommand:41 - error
 java.lang.NullPointerException
-	at com.katruk.ui.commands.redirect.RedirectToProfileCommand.execute(RedirectToProfileCommand.java:24)
+	at com.katruk.domain.commands.redirect.RedirectToProfileCommand.execute(RedirectToProfileCommand.java:24)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4363,7 +4363,7 @@ java.lang.NullPointerException
 2016-02-02 02:13:32 ERROR RedirectToTeacherDisciplinesCommand:44 - Unable to show all teacher disciplines
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getAllDisciplinesOfTeacher(DisciplineDataBaseDAO.java:132)
-	at com.katruk.ui.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
+	at com.katruk.domain.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:33)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -4417,7 +4417,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getStudentOfTeacher(EvaluationDataBaseDAO.java:37)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:42)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4449,7 +4449,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 2016-02-02 02:16:54 ERROR RedirectToConfirmedCommand:55 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Students of Teacher
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getStudentOfTeacher(EvaluationDataBaseDAO.java:45)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:42)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:42)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4530,7 +4530,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have a
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:35)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4563,7 +4563,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:35)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4598,7 +4598,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 02:54:09 ERROR DeclaredCommand:57 - Can't declared to discipline
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:35)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:35)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4637,7 +4637,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 02:56:17 INFO  EncodingFilter:22 - Set encoding - UTF-8
 2016-02-02 02:56:27 ERROR RedirectToProfileCommand:41 - error
 java.lang.NullPointerException
-	at com.katruk.ui.commands.redirect.RedirectToProfileCommand.execute(RedirectToProfileCommand.java:24)
+	at com.katruk.domain.commands.redirect.RedirectToProfileCommand.execute(RedirectToProfileCommand.java:24)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4670,7 +4670,7 @@ java.lang.NullPointerException
 2016-02-02 02:56:46 ERROR DeclaredCommand:57 - Can't declared to discipline
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.create(EvaluationDataBaseDAO.java:105)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4706,7 +4706,7 @@ java.lang.NullPointerException
 	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:69)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:46)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:46)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4740,7 +4740,7 @@ java.lang.NullPointerException
 2016-02-02 03:09:17 ERROR DeclaredCommand:57 - Can't declared to discipline
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.create(EvaluationDataBaseDAO.java:108)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4775,7 +4775,7 @@ java.lang.NullPointerException
 2016-02-02 03:11:33 ERROR DeclaredCommand:57 - Can't declared to discipline
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.create(EvaluationDataBaseDAO.java:108)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4807,7 +4807,7 @@ java.lang.NullPointerException
 2016-02-02 03:14:34 INFO  EncodingFilter:22 - Set encoding - UTF-8
 2016-02-02 03:14:52 ERROR DeclaredCommand:57 - Can't declared to discipline
 java.lang.NullPointerException
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:41)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:41)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4840,7 +4840,7 @@ java.lang.NullPointerException
 2016-02-02 04:55:41 INFO  EncodingFilter:22 - Set encoding - UTF-8
 2016-02-02 04:55:44 ERROR RedirectToProfileCommand:41 - error
 java.lang.NullPointerException
-	at com.katruk.ui.commands.redirect.RedirectToProfileCommand.execute(RedirectToProfileCommand.java:24)
+	at com.katruk.domain.commands.redirect.RedirectToProfileCommand.execute(RedirectToProfileCommand.java:24)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4889,7 +4889,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getStudentOfTeacher(EvaluationDataBaseDAO.java:37)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4921,7 +4921,7 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 2016-02-02 04:57:33 ERROR RedirectToConfirmedCommand:57 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Students of Teacher
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getStudentOfTeacher(EvaluationDataBaseDAO.java:45)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -4981,7 +4981,7 @@ java.lang.NullPointerException
 	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -5015,7 +5015,7 @@ java.lang.NullPointerException
 	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -5052,7 +5052,7 @@ java.lang.NullPointerException
 	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -5088,7 +5088,7 @@ java.lang.NullPointerException
 	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
-	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
+	at com.katruk.domain.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -5132,7 +5132,7 @@ java.lang.NullPointerException
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5165,7 +5165,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5200,7 +5200,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 19:20:25 ERROR RedirectToConfirmedCommand:62 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5242,7 +5242,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5275,7 +5275,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5310,7 +5310,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 19:20:57 ERROR RedirectToConfirmedCommand:62 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5350,7 +5350,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5383,7 +5383,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5418,7 +5418,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 19:54:10 ERROR RedirectToConfirmedCommand:62 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:44)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5461,7 +5461,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5494,7 +5494,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5529,7 +5529,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:00:25 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5570,7 +5570,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5603,7 +5603,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5638,7 +5638,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:00:33 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5678,7 +5678,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5711,7 +5711,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5746,7 +5746,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:00:46 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5788,7 +5788,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5821,7 +5821,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5856,7 +5856,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:01:17 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5898,7 +5898,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5931,7 +5931,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -5966,7 +5966,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:05:19 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6007,7 +6007,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6040,7 +6040,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6075,7 +6075,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:05:23 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6117,7 +6117,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6150,7 +6150,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6185,7 +6185,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:06:19 ERROR RedirectToConfirmedCommand:64 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6228,7 +6228,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: resultSet get nothing
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:277)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6261,7 +6261,7 @@ com.katruk.dao.exceptions.DaoException: resultSet get nothing
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by statement
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getBy(DisciplineDataBaseDAO.java:280)
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:57)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6296,7 +6296,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:08:14 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 com.katruk.dao.exceptions.DaoException: Can't get Discipline by title
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.get(DisciplineDataBaseDAO.java:60)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:45)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6339,7 +6339,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6374,7 +6374,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6408,7 +6408,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6443,7 +6443,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6479,7 +6479,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6514,7 +6514,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6549,7 +6549,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:300)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6584,7 +6584,7 @@ java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
 	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:300)
-	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
+	at com.katruk.domain.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
@@ -6671,7 +6671,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 21:40:58 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 21:41:17 ERROR RevokedCommand:38 - Can't set set in student and discipline
 java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
-	at com.katruk.ui.commands.set.status.DeletedCommand.execute(DeletedCommand.java:29)
+	at com.katruk.domain.commands.set.status.DeletedCommand.execute(DeletedCommand.java:29)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
@@ -6705,7 +6705,7 @@ java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cas
 2016-02-02 21:47:39 ERROR RedirectToTeacherDisciplinesCommand:49 - Unable to show all teacher disciplines
 java.lang.NullPointerException
 	at com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO.getAllDisciplinesOfTeacher(DisciplineDataBaseDAO.java:132)
-	at com.katruk.ui.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:38)
+	at com.katruk.domain.commands.redirect.RedirectToTeacherDisciplinesCommand.execute(RedirectToTeacherDisciplinesCommand.java:38)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)

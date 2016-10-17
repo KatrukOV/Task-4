@@ -1,48 +1,57 @@
 package com.katruk.dao;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.interfase.*;
-import com.katruk.dao.mySqlDoaImpl.*;
+import com.katruk.dao.interfase.DisciplineDAO;
+import com.katruk.dao.interfase.EvaluationDAO;
+import com.katruk.dao.interfase.HumanDAO;
+import com.katruk.dao.interfase.StudentDAO;
+import com.katruk.dao.interfase.TeacherDAO;
+import com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO;
+import com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO;
+import com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO;
+import com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO;
+import com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO;
 import com.katruk.dao.utils.ConnectionPool;
 
 import java.sql.Connection;
 
 public class DaoMySqlFactory extends DaoFactory {
 
-    private static ConnectionPool connectionPool;
+  private static ConnectionPool connectionPool;
 
-    public static Connection getConnection() throws DaoException {
-        if (connectionPool == null)
-            connectionPool = ConnectionPool.getInstance();
-        return  connectionPool.getConnection();
+  public static Connection getConnection() throws DaoException {
+    if (connectionPool == null) {
+      connectionPool = ConnectionPool.getInstance();
     }
+    return connectionPool.getConnection();
+  }
 
-    public static void close(Connection connection) throws DaoException {
-        connectionPool.close(connection);
-    }
+  public static void close(Connection connection) throws DaoException {
+    connectionPool.close(connection);
+  }
 
-    @Override
-    public HumanDAO getHumanDAO() {
-        return new HumanDataBaseDAO();
-    }
+  @Override
+  public HumanDAO getHumanDAO() {
+    return new HumanDataBaseDAO();
+  }
 
-    @Override
-    public StudentDAO getStudentDAO() {
-        return new StudentDataBaseDAO();
-    }
+  @Override
+  public StudentDAO getStudentDAO() {
+    return new StudentDataBaseDAO();
+  }
 
-    @Override
-    public TeacherDAO getTeacherDAO() {
-        return new TeacherDataBaseDAO();
-    }
+  @Override
+  public TeacherDAO getTeacherDAO() {
+    return new TeacherDataBaseDAO();
+  }
 
-    @Override
-    public DisciplineDAO getDisciplineDAO() {
-        return new DisciplineDataBaseDAO();
-    }
+  @Override
+  public DisciplineDAO getDisciplineDAO() {
+    return new DisciplineDataBaseDAO();
+  }
 
-    @Override
-    public EvaluationDAO getEvaluationDAO() {
-        return new EvaluationDataBaseDAO();
-    }
+  @Override
+  public EvaluationDAO getEvaluationDAO() {
+    return new EvaluationDataBaseDAO();
+  }
 }

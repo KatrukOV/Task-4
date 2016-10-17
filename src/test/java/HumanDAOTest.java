@@ -33,7 +33,7 @@ public class HumanDAOTest {
 
 //    @Test
 //    public void getAllStudentsForTest() {
-//        Assert.assertEquals(humanDAO.getAllStudentsFor(tempDiscipline).size(), 0);
+//        Assert.assertEquals(humanDAO.getStudentsByDiscipline(tempDiscipline).size(), 0);
 //    }
 
     @Test
