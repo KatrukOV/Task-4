@@ -2,7 +2,7 @@ package com.katruk.ui.commands.getAll;
 
 import com.katruk.dao.DaoFactory;
 import com.katruk.dao.utils.Config;
-import com.katruk.domen.entity.Discipline;
+import com.katruk.domain.entity.Discipline;
 import com.katruk.ui.PageAttribute;
 import com.katruk.ui.commands.ICommand;
 import org.apache.log4j.Logger;

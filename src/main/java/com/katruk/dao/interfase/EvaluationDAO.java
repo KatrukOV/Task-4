@@ -1,9 +1,9 @@
 package com.katruk.dao.interfase;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.domen.entity.Discipline;
-import com.katruk.domen.entity.Evaluation;
-import com.katruk.domen.entity.human.Human;
+import com.katruk.domain.entity.Discipline;
+import com.katruk.domain.entity.Evaluation;
+import com.katruk.domain.entity.human.Human;
 
 import java.util.List;
 

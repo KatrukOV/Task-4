@@ -1,8 +1,8 @@
-package com.katruk.domen.logic;
-import com.katruk.domen.entity.human.Admin;
-import com.katruk.domen.entity.human.Human;
-import com.katruk.domen.entity.human.Student;
-import com.katruk.domen.entity.human.Teacher;
+package com.katruk.domain.logic;
+import com.katruk.domain.entity.human.Admin;
+import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.human.Student;
+import com.katruk.domain.entity.human.Teacher;
 
 public class HumanFactory {
 

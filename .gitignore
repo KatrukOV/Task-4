@@ -10,4 +10,5 @@ target/*
 log/*
 
 # Diagram/*
-doc/*
+
+src/main/webapp/META-INF/

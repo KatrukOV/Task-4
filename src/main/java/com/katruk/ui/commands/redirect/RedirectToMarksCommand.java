@@ -3,10 +3,10 @@ package com.katruk.ui.commands.redirect;
 
 import com.katruk.dao.DaoFactory;
 import com.katruk.dao.utils.Config;
-import com.katruk.domen.dto.StudentMark;
-import com.katruk.domen.entity.Discipline;
-import com.katruk.domen.entity.Evaluation;
-import com.katruk.domen.entity.human.Student;
+import com.katruk.domain.dto.StudentMark;
+import com.katruk.domain.entity.Discipline;
+import com.katruk.domain.entity.Evaluation;
+import com.katruk.domain.entity.human.Student;
 import com.katruk.ui.PageAttribute;
 import com.katruk.ui.commands.ICommand;
 import org.apache.log4j.Logger;

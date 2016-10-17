@@ -5,8 +5,8 @@ import com.katruk.dao.interfase.HumanDAO;
 import com.katruk.dao.sql.statment.HumanPrepareStatement;
 import com.katruk.dao.sql.table.HumanTable;
 import com.katruk.dao.utils.ConnectionPool;
-import com.katruk.domen.entity.human.Human;
-import com.katruk.domen.logic.HumanFactory;
+import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.logic.HumanFactory;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;

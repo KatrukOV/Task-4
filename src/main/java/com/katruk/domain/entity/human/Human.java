@@ -1,6 +1,6 @@
-package com.katruk.domen.entity.human;
+package com.katruk.domain.entity.human;
 
-import com.katruk.domen.entity.Model;
+import com.katruk.domain.entity.Model;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public abstract class Human extends Model {

@@ -1,4 +1,4 @@
-package com.katruk.domen.entity;
+package com.katruk.domain.entity;
 
 import java.io.Serializable;
 

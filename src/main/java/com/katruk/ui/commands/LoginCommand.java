@@ -2,8 +2,8 @@ package com.katruk.ui.commands;
 
 import com.katruk.dao.DaoFactory;
 import com.katruk.dao.utils.Config;
-import com.katruk.domen.entity.human.Human;
-import com.katruk.domen.entity.human.Teacher;
+import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.human.Teacher;
 import com.katruk.ui.PageAttribute;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.log4j.Logger;

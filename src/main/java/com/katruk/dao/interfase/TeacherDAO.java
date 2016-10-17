@@ -1,8 +1,8 @@
 package com.katruk.dao.interfase;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.domen.entity.human.Human;
-import com.katruk.domen.entity.human.Teacher;
+import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.human.Teacher;
 
 public interface TeacherDAO extends HumanDAO {
 

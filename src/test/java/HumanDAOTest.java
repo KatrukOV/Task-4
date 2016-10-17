@@ -1,7 +1,7 @@
 import com.katruk.dao.interfase.DisciplineDAO;
 import com.katruk.dao.interfase.HumanDAO;
-import com.katruk.domen.entity.Discipline;
-import com.katruk.domen.entity.human.Human;
+import com.katruk.domain.entity.Discipline;
+import com.katruk.domain.entity.human.Human;
 
 public class HumanDAOTest {
 

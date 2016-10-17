@@ -1449,7 +1449,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -1524,7 +1524,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -1602,7 +1602,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -1677,7 +1677,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -1797,7 +1797,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -1988,7 +1988,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -2410,7 +2410,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -2514,7 +2514,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-01-31 22:02:09 INFO  EncodingFilter:22 - Set encoding - UTF-8
 2016-01-31 22:02:29 INFO  AuthVerification:45 - Unauthorized access to http://localhost:8080/dispatcher. Denied. Redirecting to login page...
 2016-01-31 22:02:35 ERROR RedirectToDeclaredDisciplinesCommand:39 - show all declared Disciplines
-java.lang.ClassCastException: com.katruk.domen.entity.human.Admin cannot be cast to com.katruk.domen.entity.human.Student
+java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
 	at com.katruk.ui.commands.redirect.RedirectToDeclaredDisciplinesCommand.execute(RedirectToDeclaredDisciplinesCommand.java:27)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
@@ -2549,7 +2549,7 @@ java.lang.ClassCastException: com.katruk.domen.entity.human.Admin cannot be cast
 	at java.lang.Thread.run(Thread.java:745)
 2016-01-31 22:02:35 INFO  AuthVerification:35 - Received a request from user god god god to http://localhost:8080/dispatcher
 2016-01-31 22:02:36 ERROR RedirectToDeclaredDisciplinesCommand:39 - show all declared Disciplines
-java.lang.ClassCastException: com.katruk.domen.entity.human.Admin cannot be cast to com.katruk.domen.entity.human.Student
+java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
 	at com.katruk.ui.commands.redirect.RedirectToDeclaredDisciplinesCommand.execute(RedirectToDeclaredDisciplinesCommand.java:27)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doGet(DispatcherServlet.java:26)
@@ -2642,7 +2642,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -2830,7 +2830,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -2986,7 +2986,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domen.entity.human.Student
+Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on type com.katruk.domain.entity.human.Student
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -3004,7 +3004,7 @@ Caused by: javax.el.PropertyNotFoundException: Property 'last_name' not found on
 2016-01-31 22:41:42 INFO  AuthVerification:35 - Received a request from user god god god to http://localhost:8080/dispatcher
 2016-01-31 22:41:51 INFO  AuthVerification:35 - Received a request from user god god god to http://localhost:8080/dispatcher
 2016-01-31 22:41:59 ERROR RevokedCommand:43 - Can't revoked discipline
-java.lang.ClassCastException: com.katruk.domen.entity.human.Admin cannot be cast to com.katruk.domen.entity.human.Student
+java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
 	at com.katruk.ui.commands.seter.status.RevokedCommand.execute(RevokedCommand.java:30)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
@@ -4703,7 +4703,7 @@ java.lang.NullPointerException
 2016-02-02 03:06:57 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 03:06:58 ERROR DeclaredCommand:57 - Can't declared to discipline
 java.lang.NullPointerException
-	at com.katruk.domen.entity.Evaluation.toString(Evaluation.java:69)
+	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:69)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
 	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:46)
@@ -4978,7 +4978,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have a
 2016-02-02 19:05:39 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 19:05:41 ERROR DeclaredCommand:61 - Can't declared to discipline
 java.lang.NullPointerException
-	at com.katruk.domen.entity.Evaluation.toString(Evaluation.java:79)
+	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
 	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
@@ -5012,7 +5012,7 @@ java.lang.NullPointerException
 	at java.lang.Thread.run(Thread.java:745)
 2016-02-02 19:05:45 ERROR DeclaredCommand:61 - Can't declared to discipline
 java.lang.NullPointerException
-	at com.katruk.domen.entity.Evaluation.toString(Evaluation.java:79)
+	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
 	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
@@ -5049,7 +5049,7 @@ java.lang.NullPointerException
 2016-02-02 19:07:41 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 19:07:43 ERROR DeclaredCommand:61 - Can't declared to discipline
 java.lang.NullPointerException
-	at com.katruk.domen.entity.Evaluation.toString(Evaluation.java:79)
+	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
 	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:48)
@@ -5085,7 +5085,7 @@ java.lang.NullPointerException
 2016-02-02 19:10:05 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 19:10:07 ERROR DeclaredCommand:61 - Can't declared to discipline
 java.lang.NullPointerException
-	at com.katruk.domen.entity.Evaluation.toString(Evaluation.java:79)
+	at com.katruk.domain.entity.Evaluation.toString(Evaluation.java:79)
 	at java.lang.String.valueOf(String.java:2847)
 	at java.lang.StringBuilder.append(StringBuilder.java:128)
 	at com.katruk.ui.commands.seter.status.DeclaredCommand.execute(DeclaredCommand.java:50)
@@ -6337,7 +6337,7 @@ Caused by: com.katruk.dao.exceptions.DaoException: resultSet get nothing
 2016-02-02 20:12:12 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6372,7 +6372,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:12:27 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6406,7 +6406,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:12:50 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6441,7 +6441,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:13:10 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6477,7 +6477,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:18:22 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6512,7 +6512,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:18:25 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:297)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6547,7 +6547,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:23:11 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:300)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6582,7 +6582,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 20:23:18 ERROR RedirectToConfirmedCommand:65 - Unable to show students of Teacher DECLARED
 java.lang.NullPointerException: Name is null
 	at java.lang.Enum.valueOf(Enum.java:235)
-	at com.katruk.domen.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
+	at com.katruk.domain.entity.Evaluation$Mark.valueOf(Evaluation.java:21)
 	at com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO.getByDisciplineAndStatus(EvaluationDataBaseDAO.java:300)
 	at com.katruk.ui.commands.redirect.RedirectToConfirmedCommand.execute(RedirectToConfirmedCommand.java:48)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
@@ -6670,7 +6670,7 @@ java.lang.NullPointerException: Name is null
 2016-02-02 21:40:39 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 21:40:58 INFO  GetAllDisciplinesCommand:32 - get all disciplines = 4
 2016-02-02 21:41:17 ERROR RevokedCommand:38 - Can't set set in student and discipline
-java.lang.ClassCastException: com.katruk.domen.entity.human.Admin cannot be cast to com.katruk.domen.entity.human.Student
+java.lang.ClassCastException: com.katruk.domain.entity.human.Admin cannot be cast to com.katruk.domain.entity.human.Student
 	at com.katruk.ui.commands.set.status.DeletedCommand.execute(DeletedCommand.java:29)
 	at com.katruk.ui.controllers.DispatcherServlet.processRequest(DispatcherServlet.java:37)
 	at com.katruk.ui.controllers.DispatcherServlet.doPost(DispatcherServlet.java:31)
@@ -6795,7 +6795,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domen.dto.StudentMark
+Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domain.dto.StudentMark
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -6868,7 +6868,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domen.dto.StudentMark
+Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domain.dto.StudentMark
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -6943,7 +6943,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domen.dto.StudentMark
+Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domain.dto.StudentMark
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -7020,7 +7020,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domen.dto.StudentMark
+Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domain.dto.StudentMark
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)
@@ -7098,7 +7098,7 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domen.dto.StudentMark
+Caused by: javax.el.PropertyNotFoundException: Property 'discipline' not found on type com.katruk.domain.dto.StudentMark
 	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:268)
 	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:221)
 	at javax.el.BeanELResolver.property(BeanELResolver.java:355)

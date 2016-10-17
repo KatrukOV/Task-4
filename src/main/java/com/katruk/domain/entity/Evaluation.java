@@ -1,6 +1,6 @@
-package com.katruk.domen.entity;
+package com.katruk.domain.entity;
 
-import com.katruk.domen.entity.human.Student;
+import com.katruk.domain.entity.human.Student;
 
 public class Evaluation extends Model{
 

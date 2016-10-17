@@ -1,4 +1,4 @@
-package com.katruk.domen.entity.human;
+package com.katruk.domain.entity.human;
 
 public class Teacher extends Human {
 

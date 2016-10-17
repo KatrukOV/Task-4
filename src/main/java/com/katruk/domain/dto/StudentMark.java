@@ -1,4 +1,4 @@
-package com.katruk.domen.dto;
+package com.katruk.domain.dto;
 
 public class StudentMark {
 

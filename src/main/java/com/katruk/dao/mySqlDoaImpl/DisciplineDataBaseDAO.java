@@ -5,9 +5,9 @@ import com.katruk.dao.interfase.DisciplineDAO;
 import com.katruk.dao.sql.statment.DisciplinePrepareStatement;
 import com.katruk.dao.sql.table.DisciplineTable;
 import com.katruk.dao.utils.ConnectionPool;
-import com.katruk.domen.entity.Discipline;
-import com.katruk.domen.entity.human.Human;
-import com.katruk.domen.entity.human.Teacher;
+import com.katruk.domain.entity.Discipline;
+import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.human.Teacher;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;

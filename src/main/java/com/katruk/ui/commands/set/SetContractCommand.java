@@ -3,7 +3,7 @@ package com.katruk.ui.commands.set;
 
 import com.katruk.dao.DaoFactory;
 import com.katruk.dao.utils.Config;
-import com.katruk.domen.entity.human.Human;
+import com.katruk.domain.entity.human.Human;
 import com.katruk.ui.PageAttribute;
 import com.katruk.ui.commands.ICommand;
 import org.apache.log4j.Logger;

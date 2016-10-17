@@ -1,7 +1,7 @@
-package com.katruk.domen.entity;
+package com.katruk.domain.entity;
 
 
-import com.katruk.domen.entity.human.Teacher;
+import com.katruk.domain.entity.human.Teacher;
 
 public class Discipline extends Model {
 

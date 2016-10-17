@@ -2,7 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86597243-e3ef-44d8-99b0-4814be4cb0b9" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/dto/StudentMark.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/dto/StudentMark.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/Discipline.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/Discipline.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/Evaluation.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/Evaluation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/Model.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/Model.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Admin.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Admin.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Human.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Human.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Student.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Teacher.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Teacher.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/logic/HumanFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/logic/HumanFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/Log4jResult.log" afterPath="$PROJECT_DIR$/log/Log4jResult.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/AdminDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/DisciplineDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/DisciplineDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/EvaluationDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/EvaluationDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/HumanDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/HumanDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/IDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/IDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/StudentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/StudentDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/TeacherDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/TeacherDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/AddDisciplineCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/AddDisciplineCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/FeedbackCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/FeedbackCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/LoginCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/RegistrationCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllDisciplinesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllDisciplinesCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllHumansCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllHumansCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllStudentsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllStudentsCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllTeachersCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllTeachersCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToConfirmedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToConfirmedCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToDeclaredDisciplinesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToDeclaredDisciplinesCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToEvaluationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToEvaluationCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToMarksCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToMarksCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToProfileCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToProfileCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToTeacherDisciplinesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToTeacherDisciplinesCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetContractCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetContractCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetPositionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetPositionCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetRoleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetRoleCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/ConfirmedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/ConfirmedCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeclaredCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeclaredCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeletedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeletedCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/RevokedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/RevokedCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AdminFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AdminFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AuthVerification.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AuthVerification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/StudentFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/StudentFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/TeacherFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/TeacherFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/DisciplinesDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/DisciplinesDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HumanDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/HumanDAOTest.java" />
     </list>
     <ignored path="Faculty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +87,18 @@
     <favorites_list name="Faculty" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +106,13 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -117,6 +185,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -146,6 +216,116 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="katruk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="katruk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -153,8 +333,6 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -747,12 +925,13 @@
       <updated>1474468622762</updated>
       <workItem from="1474468627692" duration="854000" />
       <workItem from="1474533917216" duration="94000" />
-      <workItem from="1476710875150" duration="614000" />
+      <workItem from="1476710875150" duration="1138000" />
+      <workItem from="1476712104085" duration="153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1562000" />
+    <option name="totallyTimeSpent" value="2239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="988" extended-state="7" />
@@ -774,6 +953,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -785,7 +965,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -808,7 +987,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/createDataBase.sql">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -820,7 +999,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/createDataBase.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -963,6 +1148,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
