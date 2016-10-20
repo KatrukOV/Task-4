@@ -28,10 +28,10 @@
     </form>
 
     <%--<form action="/dispatcher" method="post">--%>
-        <%--<input type="hidden" name="login" value="${human.login}"/>--%>
-        <%--<input type="hidden" name="title" value="${title}"/>--%>
-        <%--<input type="hidden" name="command" value="deleted"/>--%>
-        <%--<input type="submit" value="deleted"/>--%>
+    <%--<input type="hidden" name="login" value="${human.login}"/>--%>
+    <%--<input type="hidden" name="title" value="${title}"/>--%>
+    <%--<input type="hidden" name="command" value="deleted"/>--%>
+    <%--<input type="submit" value="deleted"/>--%>
     <%--</form>--%>
 
 
@@ -40,7 +40,8 @@
     </c:if>
 </c:forEach>
 
-<a href="jsp/teacher/teacherDisciplines.jsp"><input type="button" value="back to teacher Disciplines"/></a>
+<a href="jsp/teacher/teacherDisciplines.jsp"><input type="button"
+                                                    value="back to teacher Disciplines"/></a>
 
 <jsp:include page="/jsp/all/toProfile.jsp"/>
 

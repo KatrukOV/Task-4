@@ -2,10 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}" scope="session" />--%>
-<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : 'ua'}" scope="session" />
-<fmt:setLocale value="${language}" />
+<c:set var="language"
+       value="${not empty param.language ? param.language : not empty language ? language : 'ua'}"
+       scope="session"/>
+<fmt:setLocale value="${language}"/>
 
-<fmt:setBundle basename="i18n.text" />
+<fmt:setBundle basename="i18n.text"/>
 
 <!DOCTYPE html>
 
@@ -28,10 +30,10 @@
 </form>
 
 <form action="/dispatcher" method="post">
-    <label for="Login"><fmt:message key="index.label.login" />:</label>
+    <label for="Login"><fmt:message key="index.label.login"/>:</label>
     <input type="text" id="login" name="login">
     <br>
-    <label for="password"><fmt:message key="index.label.password" />:</label>
+    <label for="password"><fmt:message key="index.label.password"/>:</label>
     <input type="password" id="password" name="password">
     <br>
 
@@ -39,7 +41,8 @@
     <fmt:message key="index.button.submit" var="buttonValue"/>
     <input type="submit" name="submit" value="${buttonValue}">
 
-    <a href="jsp/reg/registration.jsp"><input type="button" value="<fmt:message key="index.label.signUp"/>"/></a>
+    <a href="jsp/reg/registration.jsp"><input type="button"
+                                              value="<fmt:message key="index.label.signUp"/>"/></a>
 </form>
 
 

@@ -1,21 +1,21 @@
-import com.katruk.dao.interfase.DisciplineDAO;
-import com.katruk.dao.interfase.HumanDAO;
+import com.katruk.dao.DisciplineDAO;
+import com.katruk.dao.HumanDAO;
 import com.katruk.domain.entity.Discipline;
 import com.katruk.domain.entity.human.Human;
 
 public class DisciplinesDAOTest {
 
 
-    private DisciplineDAO disciplineDAO;
-    private HumanDAO humanDAO;
-    private Discipline tempDiscipline;
-    private Human student;
-    private Human teacher;
+  private DisciplineDAO disciplineDAO;
+  private HumanDAO humanDAO;
+  private Discipline tempDiscipline;
+  private Human student;
+  private Human teacher;
 /*
     @Before
     public void init() throws SQLException {
-        disciplineDAO = new DisciplineDataBaseDAO();
-        humanDAO = new HumanDataBaseDAO();
+        disciplineDAO = new DisciplineMySql();
+        humanDAO = new HumanMySql();
         student = new Student("Student4Test", "student", "Johny", "Doe", "Djorich");
 		student.setId(-1);
         teacher = new Teacher("login", "password", "John", "Doe", "Djorich");

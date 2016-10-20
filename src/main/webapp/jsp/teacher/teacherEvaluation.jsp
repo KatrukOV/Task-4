@@ -20,14 +20,15 @@
 
         <label><b> ${evaluation.mark == null ? "" : evaluation.mark} </b></label>
 
-        <label>                set Mark: </label>
+        <label> set Mark: </label>
         <select name="mark">
             <option value="A" ${evaluation.mark.equals('A') ? 'selected="selected"' : ''}>A</option>
             <option value="B" ${evaluation.mark.equals('B') ? 'selected="selected"' : ''}>B</option>
             <option value="C" ${evaluation.mark.equals('C') ? 'selected="selected"' : ''}>C</option>
             <option value="D" ${evaluation.mark.equals('D') ? 'selected="selected"' : ''}>D</option>
             <option value="E" ${evaluation.mark.equals('E') ? 'selected="selected"' : ''}>E</option>
-            <option value="Fx" ${evaluation.mark.equals('Fx') ? 'selected="selected"' : ''}>Fx</option>
+            <option value="Fx" ${evaluation.mark.equals('Fx') ? 'selected="selected"' : ''}>Fx
+            </option>
             <option value="F" ${evaluation.mark.equals('F') ? 'selected="selected"' : ''}>F</option>
         </select>
 
@@ -40,7 +41,8 @@
 </c:forEach>
 <br>
 <br>
-<a href="jsp/teacher/teacherDisciplines.jsp"><input type="button" value="back to teacher Disciplines"/></a>
+<a href="jsp/teacher/teacherDisciplines.jsp"><input type="button"
+                                                    value="back to teacher Disciplines"/></a>
 <br>
 <br>
 <br>

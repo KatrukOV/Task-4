@@ -32,14 +32,14 @@
     </filter-mapping>
 
     <filter>
-    <filter-name>LogFilter</filter-name>
-    <filter-class>com.katruk.ui.filters.LogFilter</filter-class>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>com.katruk.ui.filters.LogFilter</filter-class>
     </filter>
 
     <filter-mapping>
-    <filter-name>LogFilter</filter-name>
-    <servlet-name>dispatcher</servlet-name>
-    <url-pattern>/*</url-pattern>
+        <filter-name>LogFilter</filter-name>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
 
     <filter>
@@ -84,10 +84,10 @@
     </filter-mapping>
 
     <!--<jsp-config>-->
-        <!--<jsp-property-group>-->
-            <!--<url-pattern>*.jsp</url-pattern>-->
-            <!--<page-encoding>UTF-8</page-encoding>-->
-        <!--</jsp-property-group>-->
+    <!--<jsp-property-group>-->
+    <!--<url-pattern>*.jsp</url-pattern>-->
+    <!--<page-encoding>UTF-8</page-encoding>-->
+    <!--</jsp-property-group>-->
     <!--</jsp-config>-->
 
 </web-app>

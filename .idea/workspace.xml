@@ -2,57 +2,168 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86597243-e3ef-44d8-99b0-4814be4cb0b9" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/dto/StudentMark.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/dto/StudentMark.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/Discipline.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/Discipline.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/Evaluation.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/Evaluation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/Model.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/Model.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Admin.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Admin.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Human.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Human.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Student.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/entity/human/Teacher.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Teacher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domen/logic/HumanFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/logic/HumanFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/Message.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/message.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/dto/StudentMark.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/Discipline.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/Evaluation$Mark.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/Evaluation$StatusInDiscipline.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/Evaluation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/Model.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/human/Admin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/human/Human$Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/human/Human.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/human/Student.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/human/Teacher$Position.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/entity/human/Teacher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/logic/HumanFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/domen/logic/HumanFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/AddDisciplineCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/FeedbackCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/ICommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/LoginCommand$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/LoginCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/LogoutCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/RegistrationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/UnknownCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/getAll/GetAllDisciplinesCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/getAll/GetAllHumansCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/getAll/GetAllStudentsCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/getAll/GetAllTeachersCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToConfirmedCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToDeclaredDisciplinesCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToEvaluationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToMarksCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToProfileCommand$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToProfileCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/redirect/RedirectToTeacherDisciplinesCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/SetContractCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/SetPositionCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/SetRoleCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/status/ConfirmedCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/status/DeclaredCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/status/DeletedCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/commands/set/status/RevokedCommand.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/AdminDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/DisciplineDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/DisciplineDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/EvaluationDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/EvaluationDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/HumanDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/HumanDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/IDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/IDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/StudentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/StudentDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/TeacherDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/TeacherDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/DisciplineMySql.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/EvaluationMySql.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/HumanMySql.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/StudentMySql.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/TeacherMySql.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/DaoFactory.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/DaoFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/DaoMySqlFactory.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/DaoMySqlFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/exceptions/DaoException.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/exceptions/DaoException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/DisciplineDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/DisciplineDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/EvaluationDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/EvaluationDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/HumanDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/HumanDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/IDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/IDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/StudentDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/StudentDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/TeacherDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/interfase/TeacherDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/sql/statment/HumanPrepareStatement.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/sql/statment/HumanPrepareStatement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/sql/table/HumanTable.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/sql/table/HumanTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/sql/table/StudentTable.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/sql/table/StudentTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/utils/Config.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/utils/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/utils/ConnectionPool.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/dao/utils/ConnectionPool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/controllers/DispatcherHelper.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/controllers/DispatcherHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/controllers/DispatcherServlet.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/controllers/DispatcherServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/AdminFilter.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/AdminFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/AuthVerification.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/AuthVerification.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/BaseFilter.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/BaseFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/EncodingFilter.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/EncodingFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/LogFilter.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/LogFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/StudentFilter.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/StudentFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/TeacherFilter.class" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/com/katruk/ui/filters/TeacherFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/DaoFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/DaoFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/DaoMySqlFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/DaoMySqlFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/exceptions/DaoException.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/exceptions/DaoException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/DisciplineDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/DisciplineDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/EvaluationDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/EvaluationDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/HumanDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/HumanDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/IDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/IDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/StudentDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/StudentDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/TeacherDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/interfase/TeacherDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/sql/statment/HumanPrepareStatement.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/sql/statment/HumanPrepareStatement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/sql/table/HumanTable.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/sql/table/HumanTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/sql/table/StudentTable.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/sql/table/StudentTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/utils/Config.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/utils/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/dao/utils/ConnectionPool.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/dao/utils/ConnectionPool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/controllers/DispatcherHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/controllers/DispatcherHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/controllers/DispatcherServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/controllers/DispatcherServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/AdminFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/AdminFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/AuthVerification.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/AuthVerification.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/BaseFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/BaseFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/EncodingFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/EncodingFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/LogFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/LogFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/StudentFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/StudentFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/TeacherFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/katruk/ui/filters/TeacherFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/DisciplinesDAOTest.class" afterPath="$PROJECT_DIR$/target/test-classes/DisciplinesDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/HumanDAOTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HumanDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diagram/111.xml" afterPath="$PROJECT_DIR$/Diagram/111.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/Log4jResult.log" afterPath="$PROJECT_DIR$/log/Log4jResult.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/AdminDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/AdminDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/DisciplineDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/DisciplineDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/EvaluationDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/EvaluationDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/HumanDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/HumanDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/IDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/IDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/StudentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/StudentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/TeacherDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/TeacherDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/AddDisciplineCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/AddDisciplineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/FeedbackCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/FeedbackCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/LoginCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/RegistrationCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllDisciplinesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllDisciplinesCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllHumansCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllHumansCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllStudentsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllStudentsCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllTeachersCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/getAll/GetAllTeachersCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToConfirmedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToConfirmedCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToDeclaredDisciplinesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToDeclaredDisciplinesCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToEvaluationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToEvaluationCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToMarksCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToMarksCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToProfileCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToProfileCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToTeacherDisciplinesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/redirect/RedirectToTeacherDisciplinesCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetContractCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetContractCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetPositionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetPositionCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetRoleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/SetRoleCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/ConfirmedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/ConfirmedCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeclaredCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeclaredCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeletedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/DeletedCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/RevokedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/commands/set/status/RevokedCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AdminFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AdminFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AuthVerification.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/AuthVerification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/StudentFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/StudentFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/TeacherFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/TeacherFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/DaoFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/DaoFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/DaoMySqlFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/DaoMySqlFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/ConnectionPool.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/ConnectionPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/katruk/domain/commands/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/katruk/domain/commands/LoginCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/createDataBase.sql" afterPath="$PROJECT_DIR$/src/main/resources/createDataBase.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/text.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/text_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/text_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/text_ua.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/text_ua.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/humans.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/humans.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/students.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/students.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/teachers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/teachers.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/teacher/teacherConfirmed.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/teacher/teacherConfirmed.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/teacher/teacherEvaluation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/teacher/teacherEvaluation.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/DisciplinesDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/DisciplinesDAOTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HumanDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/HumanDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/config.properties" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/createDataBase.sql" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/createDataBase.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/i18n/text.properties" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/i18n/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/i18n/text_ru.properties" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/i18n/text_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/i18n/text_ua.properties" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/i18n/text_ua.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/admin/humans.jsp" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/admin/humans.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/admin/students.jsp" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/admin/students.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/admin/teachers.jsp" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/admin/teachers.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/teacher/teacherConfirmed.jsp" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/teacher/teacherConfirmed.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/teacher/teacherEvaluation.jsp" afterPath="$PROJECT_DIR$/target/Faculty-1.0-SNAPSHOT/jsp/teacher/teacherEvaluation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/createDataBase.sql" afterPath="$PROJECT_DIR$/target/classes/createDataBase.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/i18n/text.properties" afterPath="$PROJECT_DIR$/target/classes/i18n/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/i18n/text_ru.properties" afterPath="$PROJECT_DIR$/target/classes/i18n/text_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/i18n/text_ua.properties" afterPath="$PROJECT_DIR$/target/classes/i18n/text_ua.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
     </list>
     <ignored path="Faculty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,18 +198,7 @@
     <favorites_list name="Faculty" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,6 +212,44 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/DisciplineDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/EvaluationDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/TeacherDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/DisciplineDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/EvaluationDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/ModelTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/HumanPrepareStatement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/HumanDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/interfase/StudentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/StudentDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoaImpl/TeacherDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/DisciplinePrepareStatement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/EvaluationPrepareStatement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/StudentPrepareStatement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/TeacherPrepareStatement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/HumanTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/StudentTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/TeacherTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/Config.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/TeacherDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/DisciplineDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/EvaluationDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/TeacherDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/Teacher22DataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/StudentDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/HumanDataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/Human66DataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/HumanMySql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/Teacher2266DataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/DisciplineMySql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/EvaluationMySql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/domain/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/message.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/TeacherMySql.java" />
       </list>
     </option>
   </component>
@@ -131,9 +269,17 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="mavenHome" value="C:/Program Files/Java/apache-maven-3.2.5" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
@@ -185,9 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,10 +380,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -257,6 +396,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,13 +469,100 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="katruk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="katruk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Faculty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="katruk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mySqlDoa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,8 +570,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3271028" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.katruk.dao.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Task-4\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tom 8">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
@@ -728,6 +972,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -833,7 +1099,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.23" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="false" name="Tom 8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.23" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -907,7 +1173,7 @@
       </method>
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tom 8" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -926,31 +1192,34 @@
       <workItem from="1474468627692" duration="854000" />
       <workItem from="1474533917216" duration="94000" />
       <workItem from="1476710875150" duration="1138000" />
-      <workItem from="1476712104085" duration="153000" />
+      <workItem from="1476712104085" duration="9101000" />
+      <workItem from="1476954196746" duration="326000" />
+      <workItem from="1476955049620" duration="7945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2239000" />
+    <option name="totallyTimeSpent" value="19458000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="988" extended-state="7" />
+    <frame x="-4" y="-4" width="1288" height="988" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43609866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40358743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -963,7 +1232,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -978,8 +1246,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add Message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Message" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -987,69 +1261,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/createDataBase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/createDataBase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/Log4jResult.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1785">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HumanDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DisciplinesDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1149">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Diagram/command.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Diagram/command1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1075,33 +1286,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/text.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/text_ru.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/text_ua.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/student/studentDeclaredDisciplines.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1123,31 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/insertDataBase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/createDataBase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1155,9 +1318,435 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/exceptions/DaoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/DisciplinePrepareStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/HumanPrepareStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/StudentPrepareStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/TeacherPrepareStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/DisciplineTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/EvaluationTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/HumanTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/ModelTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/StudentTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/table/TeacherTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/sql/statment/EvaluationPrepareStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/text_ua.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/text_ru.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/text.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/createDataBase.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/insertDataBase.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3417">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Faculty.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/BaseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#738#739#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/ui/filters/LogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/domain/entity/human/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/domain/logic/HumanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/AdminDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/DisciplineDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/EvaluationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/HumanDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/IDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/StudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/TeacherDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/DisciplineMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#DisciplineMySql#0;class#DisciplineMySql#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/HumanMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/EvaluationMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/StudentMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/mySqlDoa/TeacherMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/message.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/domain/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/katruk/dao/utils/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Faculty:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3271028" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3271028" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3271028" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3271028" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Faculty</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3271028" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.hamcrest:hamcrest-core:1.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3271028" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

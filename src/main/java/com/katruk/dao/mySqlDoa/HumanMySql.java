@@ -1,7 +1,7 @@
-package com.katruk.dao.mySqlDoaImpl;
+package com.katruk.dao.mySqlDoa;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.interfase.HumanDAO;
+import com.katruk.dao.HumanDAO;
 import com.katruk.dao.sql.statment.HumanPrepareStatement;
 import com.katruk.dao.sql.table.HumanTable;
 import com.katruk.dao.utils.ConnectionPool;
@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HumanDataBaseDAO implements HumanDAO, HumanPrepareStatement, HumanTable {
+public class HumanMySql implements HumanDAO, HumanPrepareStatement, HumanTable {
 
   private final String ERROR_GET_ALL_HUMAN = "Can't get all Human";
   private final String ERROR_GET_HUMAN_BY_LOGIN = "Can't get Human by login";
@@ -31,9 +31,9 @@ public class HumanDataBaseDAO implements HumanDAO, HumanPrepareStatement, HumanT
 
 
   private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
-  private static final Logger LOGGER = Logger.getLogger(HumanDataBaseDAO.class);
+  private static final Logger LOGGER = Logger.getLogger(HumanMySql.class);
 
-  public HumanDataBaseDAO() {
+  public HumanMySql() {
 
   }
 

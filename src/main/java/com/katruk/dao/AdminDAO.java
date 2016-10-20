@@ -1,4 +1,4 @@
-package com.katruk.dao.interfase;
+package com.katruk.dao;
 
 public interface AdminDAO extends HumanDAO {
 

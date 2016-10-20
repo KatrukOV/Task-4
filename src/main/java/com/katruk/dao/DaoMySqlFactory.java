@@ -1,16 +1,11 @@
 package com.katruk.dao;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.interfase.DisciplineDAO;
-import com.katruk.dao.interfase.EvaluationDAO;
-import com.katruk.dao.interfase.HumanDAO;
-import com.katruk.dao.interfase.StudentDAO;
-import com.katruk.dao.interfase.TeacherDAO;
-import com.katruk.dao.mySqlDoaImpl.DisciplineDataBaseDAO;
-import com.katruk.dao.mySqlDoaImpl.EvaluationDataBaseDAO;
-import com.katruk.dao.mySqlDoaImpl.HumanDataBaseDAO;
-import com.katruk.dao.mySqlDoaImpl.StudentDataBaseDAO;
-import com.katruk.dao.mySqlDoaImpl.TeacherDataBaseDAO;
+import com.katruk.dao.mySqlDoa.DisciplineMySql;
+import com.katruk.dao.mySqlDoa.EvaluationMySql;
+import com.katruk.dao.mySqlDoa.HumanMySql;
+import com.katruk.dao.mySqlDoa.StudentMySql;
+import com.katruk.dao.mySqlDoa.TeacherMySql;
 import com.katruk.dao.utils.ConnectionPool;
 
 import java.sql.Connection;
@@ -32,26 +27,26 @@ public class DaoMySqlFactory extends DaoFactory {
 
   @Override
   public HumanDAO getHumanDAO() {
-    return new HumanDataBaseDAO();
+    return new HumanMySql();
   }
 
   @Override
   public StudentDAO getStudentDAO() {
-    return new StudentDataBaseDAO();
+    return new StudentMySql();
   }
 
   @Override
   public TeacherDAO getTeacherDAO() {
-    return new TeacherDataBaseDAO();
+    return new TeacherMySql();
   }
 
   @Override
   public DisciplineDAO getDisciplineDAO() {
-    return new DisciplineDataBaseDAO();
+    return new DisciplineMySql();
   }
 
   @Override
   public EvaluationDAO getEvaluationDAO() {
-    return new EvaluationDataBaseDAO();
+    return new EvaluationMySql();
   }
 }

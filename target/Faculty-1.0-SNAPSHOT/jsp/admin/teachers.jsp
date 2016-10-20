@@ -22,11 +22,14 @@
             <label> set position: </label>
             <select name="position">
                 <option value="ASSISTANT_PROFESSOR" ${teacher.position.equals('ASSISTANT_PROFESSOR')
-                                                      ? 'selected="selected"' : ''}>ASSISTANT_PROFESSOR</option>
+                        ? 'selected="selected"' : ''}>ASSISTANT_PROFESSOR
+                </option>
                 <option value="ASSOCIATE_PROFESSOR" ${teacher.position.equals('ASSOCIATE_PROFESSOR')
-                                                      ? 'selected="selected"' : ''}>ASSOCIATE_PROFESSOR</option>
+                        ? 'selected="selected"' : ''}>ASSOCIATE_PROFESSOR
+                </option>
                 <option value="PROFESSOR" ${teacher.position.equals('PROFESSOR')
-                                            ? 'selected="selected"' : ''}>PROFESSOR</option>
+                        ? 'selected="selected"' : ''}>PROFESSOR
+                </option>
             </select>
 
             <input type="hidden" name="login" value="${teacher.login}"/>

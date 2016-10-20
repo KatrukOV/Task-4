@@ -21,10 +21,14 @@
                 <%--<label>           set contract true</label>--%>
                 <%--<input type="checkbox" name="contract" value="contract" />--%>
 
-            <label>         set contract: </label>
+            <label> set contract: </label>
             <select name="contract">
-                <option value="TRUE" ${teacher.contract.equals('TRUE') ? 'selected="selected"' : ''}>TRUE</option>
-                <option value="FALSE" ${teacher.contract.equals('FALSE') ? 'selected="selected"' : ''}>FALSE</option>
+                <option value="TRUE" ${teacher.contract.equals('TRUE') ? 'selected="selected"' : ''}>
+                    TRUE
+                </option>
+                <option value="FALSE" ${teacher.contract.equals('FALSE') ? 'selected="selected"' : ''}>
+                    FALSE
+                </option>
             </select>
 
             <input type="hidden" name="login" value="${student.login}"/>

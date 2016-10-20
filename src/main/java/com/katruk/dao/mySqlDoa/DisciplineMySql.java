@@ -1,10 +1,11 @@
-package com.katruk.dao.mySqlDoaImpl;
+package com.katruk.dao.mySqlDoa;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.interfase.DisciplineDAO;
+import com.katruk.dao.DisciplineDAO;
 import com.katruk.dao.sql.statment.DisciplinePrepareStatement;
 import com.katruk.dao.sql.table.DisciplineTable;
 import com.katruk.dao.utils.ConnectionPool;
+import com.katruk.domain.Message;
 import com.katruk.domain.entity.Discipline;
 import com.katruk.domain.entity.human.Human;
 import com.katruk.domain.entity.human.Teacher;
@@ -18,29 +19,24 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DisciplineDataBaseDAO
+public class DisciplineMySql
     implements DisciplineDAO, DisciplineTable, DisciplinePrepareStatement {
-
-  private final String ERROR_GET_ALL_DISCIPLINE  = "Can't get all Discipline";
-  private final String ERROR_GET_DISCIPLINE_BY_TITLE  = "Can't get Discipline by title";
-  private final String ERROR_GET_DISCIPLINE_BY_ID  = "Can't get Discipline by id";
-  private final String ERROR_CREATE_DISCIPLINE  = "Can't create Discipline";
-  private final String ERROR_REMOVE_DISCIPLINE  = "Can't remove Discipline";
-  private final String ERROR_UPDATE_DISCIPLINE  = "Can't update Discipline";
-  private final String ERROR_GET_DISCIPLINE_OF_TEACHER  = "Can't get Disciplines Of Teacher";
-
   private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
 
-  private static final Logger LOGGER = Logger.getLogger(DisciplineDataBaseDAO.class);
+  private static final Logger LOGGER = Logger.getLogger(DisciplineMySql.class);
 
-  public DisciplineDataBaseDAO() {
+  private static final Message MESSAGE = Message.getInstance();
+
+  public DisciplineMySql() {
+
   }
 
   @Override
   public List<Discipline> getAll() throws DaoException {
     List<Discipline> resultList = new ArrayList<>();
-    TeacherDataBaseDAO teacherDAO = new TeacherDataBaseDAO();
+    Message message = Message.getInstance();
 
+    TeacherMySql teacherDAO = new TeacherMySql();
     try (Connection connection = CONNECTION_POOL.getConnection();
          PreparedStatement statement = connection.prepareStatement(GET_ALL);
          ResultSet resultSet = statement.executeQuery()) {
@@ -53,8 +49,8 @@ public class DisciplineDataBaseDAO
       }
       return resultList;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_ALL_DISCIPLINE, e);
-      throw new DaoException(ERROR_GET_ALL_DISCIPLINE, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_ALL_DISCIPLINE), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_ALL_DISCIPLINE), e);
     }
   }
 
@@ -65,8 +61,8 @@ public class DisciplineDataBaseDAO
       statement.setString(1, title);
       return getBy(statement);
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_DISCIPLINE_BY_TITLE, e);
-      throw new DaoException(ERROR_GET_DISCIPLINE_BY_TITLE, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_BY_TITLE), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_BY_TITLE), e);
     }
   }
 
@@ -77,8 +73,8 @@ public class DisciplineDataBaseDAO
       statement.setInt(1, id);
       return getBy(statement);
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_DISCIPLINE_BY_ID, e);
-      throw new DaoException(ERROR_GET_DISCIPLINE_BY_ID, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_BY_ID), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_BY_ID), e);
     }
   }
 
@@ -90,8 +86,8 @@ public class DisciplineDataBaseDAO
       statement.setInt(2, discipline.getTeacher().getId());
       statement.execute();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_CREATE_DISCIPLINE, e);
-      throw new DaoException(ERROR_CREATE_DISCIPLINE, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_CREATE_DISCIPLINE), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_CREATE_DISCIPLINE), e);
     }
   }
 
@@ -102,8 +98,8 @@ public class DisciplineDataBaseDAO
       statement.setInt(1, discipline.getId());
       statement.executeUpdate();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_REMOVE_DISCIPLINE, e);
-      throw new DaoException(ERROR_REMOVE_DISCIPLINE, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_REMOVE_DISCIPLINE), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_REMOVE_DISCIPLINE), e);
     }
   }
 
@@ -117,14 +113,14 @@ public class DisciplineDataBaseDAO
       statement.setInt(4, discipline.getId());
       statement.executeUpdate();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_UPDATE_DISCIPLINE, e);
-      throw new DaoException(ERROR_UPDATE_DISCIPLINE, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_UPDATE_DISCIPLINE), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_UPDATE_DISCIPLINE), e);
     }
   }
 
   @Override
   public List<Discipline> getAllDisciplinesOfTeacher(Human teacher) throws DaoException {
-    List<Discipline> resultList = new ArrayList<Discipline>();
+    List<Discipline> resultList = new ArrayList<>();
 
     try (
         Connection connection = CONNECTION_POOL.getConnection();
@@ -135,14 +131,14 @@ public class DisciplineDataBaseDAO
         resultList.add(get(resultSet.getInt(ID)));
       }
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_DISCIPLINE_OF_TEACHER, e);
-      throw new DaoException(ERROR_GET_DISCIPLINE_OF_TEACHER, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_OF_TEACHER), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_OF_TEACHER), e);
     }
     return resultList;
   }
 
   private Discipline getBy(PreparedStatement statement) throws DaoException {
-    TeacherDataBaseDAO teacherDAO = new TeacherDataBaseDAO();
+    TeacherMySql teacherDAO = new TeacherMySql();
     try (ResultSet resultSet = statement.executeQuery()) {
       Discipline discipline = new Discipline();
       if (resultSet.next()) {
@@ -151,6 +147,7 @@ public class DisciplineDataBaseDAO
         discipline.setTeacher((Teacher) teacherDAO.get(resultSet.getInt(TEACHER_ID)));
         return discipline;
       } else {
+        // TODO: MESSAGE
         throw new DaoException("resultSet get nothing");
       }
     } catch (SQLException e) {

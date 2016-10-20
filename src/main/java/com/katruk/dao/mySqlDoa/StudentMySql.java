@@ -1,7 +1,7 @@
-package com.katruk.dao.mySqlDoaImpl;
+package com.katruk.dao.mySqlDoa;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.interfase.StudentDAO;
+import com.katruk.dao.StudentDAO;
 import com.katruk.dao.sql.statment.StudentPrepareStatement;
 import com.katruk.dao.sql.table.StudentTable;
 import com.katruk.dao.utils.ConnectionPool;
@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentDataBaseDAO extends HumanDataBaseDAO
+public class StudentMySql extends HumanMySql
     implements StudentDAO, StudentPrepareStatement, StudentTable {
 
   private final String ERROR_GET_STUDENT_BY_DISCIPLINE = "Can't get students by discipline";
@@ -30,9 +30,9 @@ public class StudentDataBaseDAO extends HumanDataBaseDAO
 
 
   private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
-  private static final Logger LOGGER = Logger.getLogger(StudentDataBaseDAO.class);
+  private static final Logger LOGGER = Logger.getLogger(StudentMySql.class);
 
-  public StudentDataBaseDAO() {
+  public StudentMySql() {
   }
 
   @Override

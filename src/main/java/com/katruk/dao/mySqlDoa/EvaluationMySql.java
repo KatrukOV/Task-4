@@ -1,10 +1,11 @@
-package com.katruk.dao.mySqlDoaImpl;
+package com.katruk.dao.mySqlDoa;
 
+import com.katruk.dao.EvaluationDAO;
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.interfase.EvaluationDAO;
 import com.katruk.dao.sql.statment.EvaluationPrepareStatement;
 import com.katruk.dao.sql.table.EvaluationTable;
 import com.katruk.dao.utils.ConnectionPool;
+import com.katruk.domain.Message;
 import com.katruk.domain.entity.Discipline;
 import com.katruk.domain.entity.Evaluation;
 import com.katruk.domain.entity.human.Human;
@@ -19,29 +20,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EvaluationDataBaseDAO
+public class EvaluationMySql
     implements EvaluationDAO, EvaluationTable, EvaluationPrepareStatement {
 
-  private final String ERROR_GET_ALL_EVALUATION = "Can't get all Evaluation";
-  private final String ERROR_GET_ALL_EVALUATION_BY_DISCIPLINE_AND_STUDENT =
-      "Can't get Evaluation by Discipline and Student";
-  private final String ERROR_GET_EVALUATION_BY_ID = "Can't get Evaluation by id";
-  private final String ERROR_CREATE_EVALUATION = "Can't create Evaluation";
-  private final String ERROR_REMOVE_EVALUATION = "Can't remove Evaluation";
-  private final String ERROR_UPDATE_EVALUATION = "Can't update Evaluation";
-  private final String ERROR_SET_STATUS_OF_STUDENT = "Can't set status of Student";
-  private final String ERROR_GET_STATUS_OF_STUDENT = "Can't get status of Student";
-  private final String ERROR_GET_DISCIPLINE_OF_STUDENT_BY_STATUS =
-      "Can't get Disciplines of student by status";
-  private final String ERROR_GET_EVALUATION_OF_STUDENT_BY_STATUS =
-      "Can't get Evaluation of student by status";
-  private final String ERROR_GET_EVALUATION_OF_DISCIPLINE_BY_STATUS =
-      "Can't get all Evaluation Of Discipline by status";
-
   private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
-  private static final Logger LOGGER = Logger.getLogger(EvaluationDataBaseDAO.class);
 
-  public EvaluationDataBaseDAO() {
+  private static final Logger LOGGER = Logger.getLogger(EvaluationMySql.class);
+
+  private static final Message MESSAGE = Message.getInstance();
+
+  public EvaluationMySql() {
   }
 
   @Override
@@ -50,8 +38,8 @@ public class EvaluationDataBaseDAO
     try (Connection connection = CONNECTION_POOL.getConnection();
          PreparedStatement statement = connection.prepareStatement(GET_ALL)) {
       ResultSet resultSet = statement.executeQuery();
-      DisciplineDataBaseDAO disciplineDAO = new DisciplineDataBaseDAO();
-      StudentDataBaseDAO studentDataBaseDAO = new StudentDataBaseDAO();
+      DisciplineMySql disciplineDAO = new DisciplineMySql();
+      StudentMySql studentDataBaseDAO = new StudentMySql();
       while (resultSet.next()) {
         // todo move/dell new
         Evaluation evaluation = new Evaluation();
@@ -67,8 +55,8 @@ public class EvaluationDataBaseDAO
       }
       return resultList;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_ALL_EVALUATION, e);
-      throw new DaoException(ERROR_GET_ALL_EVALUATION, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_ALL_EVALUATION), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_ALL_EVALUATION), e);
     }
   }
 
@@ -80,8 +68,8 @@ public class EvaluationDataBaseDAO
       statement.setInt(1, discipline.getId());
       statement.setInt(2, human.getId());
       ResultSet resultSet = statement.executeQuery();
-      DisciplineDataBaseDAO disciplineDAO = new DisciplineDataBaseDAO();
-      StudentDataBaseDAO studentDataBaseDAO = new StudentDataBaseDAO();
+      DisciplineMySql disciplineDAO = new DisciplineMySql();
+      StudentMySql studentDataBaseDAO = new StudentMySql();
       Evaluation evaluation = null;
       if (resultSet.next()) {
         evaluation = new Evaluation();
@@ -96,8 +84,11 @@ public class EvaluationDataBaseDAO
       }
       return evaluation;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_ALL_EVALUATION_BY_DISCIPLINE_AND_STUDENT, e);
-      throw new DaoException(ERROR_GET_ALL_EVALUATION_BY_DISCIPLINE_AND_STUDENT, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_ALL_EVALUATION_BY_DISCIPLINE_AND_STUDENT)
+          , e);
+      throw new DaoException(MESSAGE.getMessage(Message
+                                                    .ERROR_GET_ALL_EVALUATION_BY_DISCIPLINE_AND_STUDENT),
+                             e);
     }
   }
 
@@ -108,8 +99,8 @@ public class EvaluationDataBaseDAO
          PreparedStatement statement = connection.prepareStatement(GET_BY_ID)) {
       statement.setInt(1, id);
       ResultSet resultSet = statement.executeQuery();
-      DisciplineDataBaseDAO disciplineDAO = new DisciplineDataBaseDAO();
-      StudentDataBaseDAO studentDataBaseDAO = new StudentDataBaseDAO();
+      DisciplineMySql disciplineDAO = new DisciplineMySql();
+      StudentMySql studentDataBaseDAO = new StudentMySql();
       evaluation = new Evaluation();
       if (resultSet.next()) {
         evaluation.setId(resultSet.getInt(ID));
@@ -123,8 +114,8 @@ public class EvaluationDataBaseDAO
       }
       return evaluation;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_EVALUATION_BY_ID, e);
-      throw new DaoException(ERROR_GET_EVALUATION_BY_ID, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_EVALUATION_BY_ID), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_EVALUATION_BY_ID), e);
     }
   }
 
@@ -139,8 +130,8 @@ public class EvaluationDataBaseDAO
       statement.setString(5, value.getFeedback());
       statement.execute();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_CREATE_EVALUATION, e);
-      throw new DaoException(ERROR_CREATE_EVALUATION, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_CREATE_EVALUATION), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_CREATE_EVALUATION), e);
     }
   }
 
@@ -151,8 +142,8 @@ public class EvaluationDataBaseDAO
       statement.setInt(1, value.getId());
       statement.executeUpdate();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_REMOVE_EVALUATION, e);
-      throw new DaoException(ERROR_REMOVE_EVALUATION, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_REMOVE_EVALUATION), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_REMOVE_EVALUATION), e);
     }
   }
 
@@ -168,8 +159,8 @@ public class EvaluationDataBaseDAO
       statement.setInt(5, value.getStudent().getId());
       statement.executeUpdate();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_UPDATE_EVALUATION, e);
-      throw new DaoException(ERROR_UPDATE_EVALUATION, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_UPDATE_EVALUATION), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_UPDATE_EVALUATION), e);
     }
   }
 
@@ -185,8 +176,8 @@ public class EvaluationDataBaseDAO
       statement.setInt(3, student.getId());
       statement.executeUpdate();
     } catch (SQLException e) {
-      LOGGER.error(ERROR_SET_STATUS_OF_STUDENT, e);
-      throw new DaoException(ERROR_SET_STATUS_OF_STUDENT, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_SET_STATUS_OF_STUDENT), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_SET_STATUS_OF_STUDENT), e);
     }
   }
 
@@ -202,12 +193,13 @@ public class EvaluationDataBaseDAO
       if (resultSet.next()) {
         return Evaluation.StatusInDiscipline.valueOf(resultSet.getString(STATUS));
       } else {
+        // TODO: messege
         LOGGER.info("resultSet get nothing");
         throw new DaoException("resultSet get nothing");
       }
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_STATUS_OF_STUDENT, e);
-      throw new DaoException(ERROR_GET_STATUS_OF_STUDENT, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_STATUS_OF_STUDENT), e);
+      throw new DaoException(MESSAGE.getMessage(Message.ERROR_GET_STATUS_OF_STUDENT), e);
     }
   }
 
@@ -221,14 +213,15 @@ public class EvaluationDataBaseDAO
       statement.setInt(1, student.getId());
       statement.setString(2, status.name());
       ResultSet resultSet = statement.executeQuery();
-      DisciplineDataBaseDAO disciplineDAO = new DisciplineDataBaseDAO();
+      DisciplineMySql disciplineDAO = new DisciplineMySql();
       while (resultSet.next()) {
         resultList.add(disciplineDAO.get(resultSet.getInt(DISCIPLINE_ID)));
       }
       return resultList;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_DISCIPLINE_OF_STUDENT_BY_STATUS, e);
-      throw new DaoException(ERROR_GET_DISCIPLINE_OF_STUDENT_BY_STATUS, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_DISCIPLINE_OF_STUDENT_BY_STATUS), e);
+      throw new DaoException(MESSAGE.getMessage(Message
+                                                    .ERROR_GET_DISCIPLINE_OF_STUDENT_BY_STATUS), e);
     }
   }
 
@@ -242,8 +235,8 @@ public class EvaluationDataBaseDAO
       statement.setString(2, status.name());
       ResultSet resultSet = statement.executeQuery();
       Evaluation evaluation;
-      DisciplineDataBaseDAO disciplineDAO = new DisciplineDataBaseDAO();
-      StudentDataBaseDAO studentDataBaseDAO = new StudentDataBaseDAO();
+      DisciplineMySql disciplineDAO = new DisciplineMySql();
+      StudentMySql studentDataBaseDAO = new StudentMySql();
       while (resultSet.next()) {
         evaluation = new Evaluation();
         evaluation.setId(resultSet.getInt(ID));
@@ -259,8 +252,9 @@ public class EvaluationDataBaseDAO
       }
       return resultList;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_EVALUATION_OF_STUDENT_BY_STATUS, e);
-      throw new DaoException(ERROR_GET_EVALUATION_OF_STUDENT_BY_STATUS, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_EVALUATION_OF_STUDENT_BY_STATUS), e);
+      throw new DaoException(MESSAGE.getMessage(Message
+                                                    .ERROR_GET_EVALUATION_OF_STUDENT_BY_STATUS), e);
     }
   }
 
@@ -274,8 +268,8 @@ public class EvaluationDataBaseDAO
       statement.setString(2, status.name());
       ResultSet resultSet = statement.executeQuery();
       Evaluation evaluation;
-      DisciplineDataBaseDAO disciplineDAO = new DisciplineDataBaseDAO();
-      StudentDataBaseDAO studentDataBaseDAO = new StudentDataBaseDAO();
+      DisciplineMySql disciplineDAO = new DisciplineMySql();
+      StudentMySql studentDataBaseDAO = new StudentMySql();
       while (resultSet.next()) {
         evaluation = new Evaluation();
         evaluation.setId(resultSet.getInt(ID));
@@ -291,8 +285,10 @@ public class EvaluationDataBaseDAO
       }
       return resultList;
     } catch (SQLException e) {
-      LOGGER.error(ERROR_GET_EVALUATION_OF_DISCIPLINE_BY_STATUS, e);
-      throw new DaoException(ERROR_GET_EVALUATION_OF_DISCIPLINE_BY_STATUS, e);
+      LOGGER.error(MESSAGE.getMessage(Message.ERROR_GET_EVALUATION_OF_DISCIPLINE_BY_STATUS), e);
+      throw new DaoException(MESSAGE.getMessage(Message
+                                                    .ERROR_GET_EVALUATION_OF_DISCIPLINE_BY_STATUS),
+                             e);
     }
   }
 }

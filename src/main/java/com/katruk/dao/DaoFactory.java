@@ -1,11 +1,5 @@
 package com.katruk.dao;
 
-import com.katruk.dao.interfase.DisciplineDAO;
-import com.katruk.dao.interfase.EvaluationDAO;
-import com.katruk.dao.interfase.HumanDAO;
-import com.katruk.dao.interfase.StudentDAO;
-import com.katruk.dao.interfase.TeacherDAO;
-
 public abstract class DaoFactory {
 
   public static DaoFactory getDAOFactory() {

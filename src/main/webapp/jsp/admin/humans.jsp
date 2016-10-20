@@ -20,9 +20,15 @@
             <br>
             <label> set Role: </label>
             <select name="role">
-                <option value="STUDENT" ${human.role.equals('STUDENT') ? 'selected="selected"' : ''}>STUDENT</option>
-                <option value="TEACHER" ${human.role.equals('TEACHER') ? 'selected="selected"' : ''}>TEACHER</option>
-                <option value="ADMIN" ${human.role.equals('ADMIN') ? 'selected="selected"' : ''}>ADMIN</option>
+                <option value="STUDENT" ${human.role.equals('STUDENT') ? 'selected="selected"' : ''}>
+                    STUDENT
+                </option>
+                <option value="TEACHER" ${human.role.equals('TEACHER') ? 'selected="selected"' : ''}>
+                    TEACHER
+                </option>
+                <option value="ADMIN" ${human.role.equals('ADMIN') ? 'selected="selected"' : ''}>
+                    ADMIN
+                </option>
             </select>
             <input type="hidden" name="login" value="${human.login}"/>
             <input type="hidden" name="command" value="setRole"/>

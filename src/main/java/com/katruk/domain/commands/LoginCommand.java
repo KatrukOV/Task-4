@@ -32,7 +32,7 @@ public class LoginCommand implements ICommand, PageAttribute {
 
         System.out.println(">>good 2 login=" + login + " pas=" + password);
         if (!login.isEmpty() && !password.isEmpty()) {
-//			Human user = ((HumanDataBaseDAO)DaoFactory.getInstance().create(DaoFactory.DaoType.HumanDAO)).get(login);
+//			Human user = ((HumanMySql)DaoFactory.getInstance().create(DaoFactory.DaoType.HumanDAO)).get(login);
 
           Human user = daoFactory.getHumanDAO().get(login);
 

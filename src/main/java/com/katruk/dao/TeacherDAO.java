@@ -1,4 +1,4 @@
-package com.katruk.dao.interfase;
+package com.katruk.dao;
 
 import com.katruk.dao.exceptions.DaoException;
 import com.katruk.domain.entity.human.Human;
