@@ -25,7 +25,6 @@ public class RegistrationCommand implements ICommand, PageAttribute {
   private static final String PASS_NOT_MATCH = "Passwords don't match.";
   private static final boolean CONTRACT_DEFAULT = true;
 
-
   @Override
   public String execute(HttpServletRequest request, HttpServletResponse response) {
 
@@ -54,7 +53,8 @@ public class RegistrationCommand implements ICommand, PageAttribute {
               daoFactory.getStudentDAO().create(user);
               System.out.println(">>>>>>>>>>>>>>>>>>>>> new user =" + user);
               System.out.println(">>>>>>>>>>>>>>>>> new user id =" + user.getId());
-//                            Human student = studentDAO.get(user.getLogin());
+
+//              Human student = daoFactory.getStudentDAO().get(user.getLogin());
 //                            System.out.println(">>>>>>>>>>>> new student =" + student);
 //                            System.out.println(">>>>>>>>. new student id =" +student.getId());
               daoFactory.getStudentDAO().setContractForStudent(user, CONTRACT_DEFAULT);
@@ -63,10 +63,10 @@ public class RegistrationCommand implements ICommand, PageAttribute {
               session.setAttribute(LOGIN, user.getLogin());
               session.setAttribute(USER, user);
               session.setAttribute(CONTRACT, CONTRACT_DEFAULT);
-//							session.setAttribute(CONTRACT, ((Student)student).isContract());
+//	      session.setAttribute(CONTRACT, ((Student)student).isContract());
 
               page = Config.getInstance().getValue(Config.REGISTRATION_OK);
-//							addRequestContent(request, user);
+//	      addRequestContent(request, user);
               logger.info(LOG_OK);
             } else {
               request.setAttribute(ERROR, USER_EXISTS);

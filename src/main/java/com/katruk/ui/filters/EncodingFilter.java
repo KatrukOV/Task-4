@@ -23,8 +23,9 @@ public class EncodingFilter extends BaseFilter implements Filter, PageAttribute 
   public void init(FilterConfig filterConfig) {
     this.filterConfig = filterConfig;
     encoding = filterConfig.getInitParameter("requestEncoding");
+    System.out.println(">>>encoding== " + encoding);
     if (encoding == null) {
-      encoding = ISO_8859_1;
+      encoding = UTF_8;
     }
     logger.info(String.format("Set encoding - %s", encoding));
   }

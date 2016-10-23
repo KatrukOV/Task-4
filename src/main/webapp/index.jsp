@@ -1,4 +1,4 @@
-<%--<%@ page pageEncoding="UTF-8" %>--%>
+<%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}" scope="session" />--%>
@@ -36,13 +36,13 @@
     <label for="password"><fmt:message key="index.label.password"/>:</label>
     <input type="password" id="password" name="password">
     <br>
-
     <input type="hidden" name="command" value="login"/>
     <fmt:message key="index.button.submit" var="buttonValue"/>
     <input type="submit" name="submit" value="${buttonValue}">
 
-    <a href="jsp/reg/registration.jsp"><input type="button"
-                                              value="<fmt:message key="index.label.signUp"/>"/></a>
+    <a href="jsp/reg/registration.jsp">
+        <input type="button" value="<fmt:message key="index.label.signUp"/>"/>
+    </a>
 </form>
 
 

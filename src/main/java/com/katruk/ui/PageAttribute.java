@@ -23,8 +23,8 @@ public interface PageAttribute {
   String PAGE = "page";
   String UTF_8 = "UTF-8";
   String ISO_8859_1 = "ISO-8859-1";
-  String ERROR = "error";
 
+  String ERROR = "error";
 
   String DISCIPLINE_LIST = "disciplineList";
   String EVALUATION_LIST = "evaluationList";

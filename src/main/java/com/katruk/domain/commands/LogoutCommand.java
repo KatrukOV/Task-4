@@ -14,7 +14,7 @@ public class LogoutCommand implements ICommand, PageAttribute {
     System.out.println(">>> log out userLog=" + request.getSession().getAttribute(LOGIN));
 
     request.getSession().removeAttribute(LOGIN);
-    request.getSession().invalidate();
+    //request.getSession().invalidate();
 
     return Config.getInstance().getValue(Config.INDEX);
   }

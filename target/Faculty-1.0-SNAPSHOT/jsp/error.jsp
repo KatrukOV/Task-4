@@ -9,7 +9,7 @@
     <label>Error: ${error}</label>
 </h1>
 
-<a href="/index2.jsp"><input type="button" value="back"/></a>
+<a href="/index.jsp"><input type="button" value="back"/></a>
 
 </body>
 
