@@ -5,8 +5,8 @@ import java.util.ResourceBundle;
 public class Config {
 
   private static Config instance;
-  private ResourceBundle configFile;
   private static final String BUNDLE_NAME = "config";
+  private ResourceBundle configFile;
 
   public static final String DRIVER = "DRIVER";
   public static final String URL = "URL";

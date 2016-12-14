@@ -3,7 +3,7 @@ package com.katruk.dao;
 import com.katruk.dao.exceptions.DaoException;
 import com.katruk.domain.entity.Discipline;
 import com.katruk.domain.entity.Evaluation;
-import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.Human;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
 package com.katruk.dao.utils;
 
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.domain.Message;
 
 import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;

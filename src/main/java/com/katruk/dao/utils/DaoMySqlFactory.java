@@ -1,12 +1,16 @@
-package com.katruk.dao;
+package com.katruk.dao.utils;
 
+import com.katruk.dao.DisciplineDAO;
+import com.katruk.dao.EvaluationDAO;
+import com.katruk.dao.HumanDAO;
+import com.katruk.dao.StudentDAO;
+import com.katruk.dao.TeacherDAO;
 import com.katruk.dao.exceptions.DaoException;
-import com.katruk.dao.mySqlDoa.DisciplineMySql;
-import com.katruk.dao.mySqlDoa.EvaluationMySql;
-import com.katruk.dao.mySqlDoa.HumanMySql;
-import com.katruk.dao.mySqlDoa.StudentMySql;
-import com.katruk.dao.mySqlDoa.TeacherMySql;
-import com.katruk.dao.utils.ConnectionPool;
+import com.katruk.dao.mysql.DisciplineMySql;
+import com.katruk.dao.mysql.EvaluationMySql;
+import com.katruk.dao.mysql.HumanMySql;
+import com.katruk.dao.mysql.StudentMySql;
+import com.katruk.dao.mysql.TeacherMySql;
 
 import java.sql.Connection;
 

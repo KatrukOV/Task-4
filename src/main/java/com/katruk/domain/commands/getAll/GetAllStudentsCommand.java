@@ -1,11 +1,11 @@
 package com.katruk.domain.commands.getAll;
 
 
-import com.katruk.dao.DaoFactory;
+import com.katruk.dao.utils.DaoFactory;
 import com.katruk.dao.utils.Config;
 import com.katruk.domain.commands.ICommand;
-import com.katruk.domain.entity.human.Human;
-import com.katruk.domain.entity.human.Student;
+import com.katruk.domain.entity.Human;
+import com.katruk.domain.entity.Student;
 import com.katruk.ui.PageAttribute;
 
 import org.apache.log4j.Logger;

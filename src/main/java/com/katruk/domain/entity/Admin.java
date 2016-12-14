@@ -1,4 +1,4 @@
-package com.katruk.domain.entity.human;
+package com.katruk.domain.entity;
 
 public class Admin extends Human {
 

@@ -1,15 +1,15 @@
-package com.katruk.dao.mySqlDoa;
+package com.katruk.dao.mysql;
 
 import com.katruk.dao.EvaluationDAO;
 import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.sql.statment.EvaluationPrepareStatement;
-import com.katruk.dao.sql.table.EvaluationTable;
+import com.katruk.dao.sql.Table;
 import com.katruk.dao.utils.ConnectionPool;
 import com.katruk.domain.Message;
 import com.katruk.domain.entity.Discipline;
 import com.katruk.domain.entity.Evaluation;
-import com.katruk.domain.entity.human.Human;
-import com.katruk.domain.entity.human.Student;
+import com.katruk.domain.entity.Human;
+import com.katruk.domain.entity.Student;
 
 import org.apache.log4j.Logger;
 
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EvaluationMySql
-    implements EvaluationDAO, EvaluationTable, EvaluationPrepareStatement {
+    implements EvaluationDAO, EvaluationPrepareStatement, Table {
 
   private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
 

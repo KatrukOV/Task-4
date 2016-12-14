@@ -1,14 +1,14 @@
-package com.katruk.dao.mySqlDoa;
+package com.katruk.dao.mysql;
 
-import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.DisciplineDAO;
+import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.sql.statment.DisciplinePrepareStatement;
-import com.katruk.dao.sql.table.DisciplineTable;
+import com.katruk.dao.sql.Table;
 import com.katruk.dao.utils.ConnectionPool;
 import com.katruk.domain.Message;
 import com.katruk.domain.entity.Discipline;
-import com.katruk.domain.entity.human.Human;
-import com.katruk.domain.entity.human.Teacher;
+import com.katruk.domain.entity.Human;
+import com.katruk.domain.entity.Teacher;
 
 import org.apache.log4j.Logger;
 
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DisciplineMySql
-    implements DisciplineDAO, DisciplineTable, DisciplinePrepareStatement {
+    implements DisciplineDAO, DisciplinePrepareStatement, Table {
   private static final ConnectionPool CONNECTION_POOL = ConnectionPool.getInstance();
 
   private static final Logger LOGGER = Logger.getLogger(DisciplineMySql.class);

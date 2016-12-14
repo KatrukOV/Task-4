@@ -1,7 +1,5 @@
 package com.katruk.domain.entity;
 
-import com.katruk.domain.entity.human.Student;
-
 public class Evaluation extends Model {
 
   Discipline discipline;

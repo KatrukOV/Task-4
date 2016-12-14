@@ -1,7 +1,7 @@
 package com.katruk.ui.filters;
 
 import com.katruk.dao.utils.Config;
-import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.Human;
 import com.katruk.ui.PageAttribute;
 
 import org.apache.log4j.Logger;

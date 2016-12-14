@@ -1,6 +1,6 @@
 package com.katruk.domain.commands.getAll;
 
-import com.katruk.dao.DaoFactory;
+import com.katruk.dao.utils.DaoFactory;
 import com.katruk.dao.utils.Config;
 import com.katruk.domain.commands.ICommand;
 import com.katruk.domain.entity.Discipline;

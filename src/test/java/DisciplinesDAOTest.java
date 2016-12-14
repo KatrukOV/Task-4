@@ -1,7 +1,7 @@
 import com.katruk.dao.DisciplineDAO;
 import com.katruk.dao.HumanDAO;
 import com.katruk.domain.entity.Discipline;
-import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.Human;
 
 public class DisciplinesDAOTest {
 

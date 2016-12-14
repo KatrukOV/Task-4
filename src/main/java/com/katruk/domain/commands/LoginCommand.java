@@ -1,9 +1,9 @@
 package com.katruk.domain.commands;
 
-import com.katruk.dao.DaoFactory;
+import com.katruk.dao.utils.DaoFactory;
 import com.katruk.dao.utils.Config;
-import com.katruk.domain.entity.human.Human;
-import com.katruk.domain.entity.human.Teacher;
+import com.katruk.domain.entity.Human;
+import com.katruk.domain.entity.Teacher;
 import com.katruk.ui.PageAttribute;
 
 import org.apache.commons.codec.digest.DigestUtils;

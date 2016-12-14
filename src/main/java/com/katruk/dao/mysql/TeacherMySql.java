@@ -1,12 +1,12 @@
-package com.katruk.dao.mySqlDoa;
+package com.katruk.dao.mysql;
 
-import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.TeacherDAO;
+import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.sql.statment.TeacherPrepareStatement;
-import com.katruk.dao.sql.table.TeacherTable;
+import com.katruk.dao.sql.Table;
 import com.katruk.dao.utils.ConnectionPool;
-import com.katruk.domain.entity.human.Human;
-import com.katruk.domain.entity.human.Teacher;
+import com.katruk.domain.entity.Human;
+import com.katruk.domain.entity.Teacher;
 
 import org.apache.log4j.Logger;
 
@@ -16,7 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class TeacherMySql extends HumanMySql
-    implements TeacherDAO, TeacherPrepareStatement, TeacherTable {
+    implements TeacherDAO, TeacherPrepareStatement, Table {
 
   private final String ERROR_SET_POSITION_FOR_TEACHER = "Can't set position for Teacher";
   private final String ERROR_CREATE_POSITION_FOR_TEACHER = "Can't create position for Teacher";

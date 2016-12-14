@@ -1,11 +1,11 @@
-package com.katruk.dao.mySqlDoa;
+package com.katruk.dao.mysql;
 
-import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.HumanDAO;
+import com.katruk.dao.exceptions.DaoException;
+import com.katruk.dao.sql.Table;
 import com.katruk.dao.sql.statment.HumanPrepareStatement;
-import com.katruk.dao.sql.table.HumanTable;
 import com.katruk.dao.utils.ConnectionPool;
-import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.Human;
 import com.katruk.domain.logic.HumanFactory;
 
 import org.apache.log4j.Logger;
@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HumanMySql implements HumanDAO, HumanPrepareStatement, HumanTable {
+public class HumanMySql implements HumanDAO, HumanPrepareStatement, Table {
 
   private final String ERROR_GET_ALL_HUMAN = "Can't get all Human";
   private final String ERROR_GET_HUMAN_BY_LOGIN = "Can't get Human by login";

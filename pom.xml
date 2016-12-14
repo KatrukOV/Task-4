@@ -5,8 +5,6 @@
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
-
-    <!--<title>Faculty</title>-->
     <groupId>Task4</groupId>
     <artifactId>Faculty</artifactId>
     <version>1.0-SNAPSHOT</version>

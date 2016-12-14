@@ -1,4 +1,10 @@
-package com.katruk.dao;
+package com.katruk.dao.utils;
+
+import com.katruk.dao.DisciplineDAO;
+import com.katruk.dao.EvaluationDAO;
+import com.katruk.dao.HumanDAO;
+import com.katruk.dao.StudentDAO;
+import com.katruk.dao.TeacherDAO;
 
 public abstract class DaoFactory {
 

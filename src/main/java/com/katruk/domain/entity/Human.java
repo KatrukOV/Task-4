@@ -1,6 +1,4 @@
-package com.katruk.domain.entity.human;
-
-import com.katruk.domain.entity.Model;
+package com.katruk.domain.entity;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -93,9 +91,7 @@ public abstract class Human extends Model {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-
     Human human = (Human) o;
-
     if (getId() != human.getId()) {
       return false;
     }
@@ -118,7 +114,6 @@ public abstract class Human extends Model {
       return false;
     }
     return getRole() == human.getRole();
-
   }
 
   @Override
@@ -132,5 +127,4 @@ public abstract class Human extends Model {
     result = 31 * result + (getRole() != null ? getRole().hashCode() : 0);
     return result;
   }
-
 }

@@ -1,8 +1,6 @@
 package com.katruk.domain.entity;
 
 
-import com.katruk.domain.entity.human.Teacher;
-
 public class Discipline extends Model {
 
   private String title;

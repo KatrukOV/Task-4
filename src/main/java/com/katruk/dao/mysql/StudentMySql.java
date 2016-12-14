@@ -1,12 +1,12 @@
-package com.katruk.dao.mySqlDoa;
+package com.katruk.dao.mysql;
 
-import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.StudentDAO;
+import com.katruk.dao.exceptions.DaoException;
 import com.katruk.dao.sql.statment.StudentPrepareStatement;
-import com.katruk.dao.sql.table.StudentTable;
+import com.katruk.dao.sql.Table;
 import com.katruk.dao.utils.ConnectionPool;
 import com.katruk.domain.entity.Discipline;
-import com.katruk.domain.entity.human.Human;
+import com.katruk.domain.entity.Human;
 
 import org.apache.log4j.Logger;
 
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentMySql extends HumanMySql
-    implements StudentDAO, StudentPrepareStatement, StudentTable {
+    implements StudentDAO, StudentPrepareStatement, Table {
 
   private final String ERROR_GET_STUDENT_BY_DISCIPLINE = "Can't get students by discipline";
   private final String ERROR_SET_CONTRACT_FOR_STUDENT = "Can't set Contract for Student";
