@@ -44,7 +44,5 @@
         <input type="button" value="<fmt:message key="index.label.signUp"/>"/>
     </a>
 </form>
-
-
 </body>
 </html>
