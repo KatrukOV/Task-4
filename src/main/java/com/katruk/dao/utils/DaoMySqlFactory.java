@@ -16,19 +16,6 @@ import java.sql.Connection;
 
 public class DaoMySqlFactory extends DaoFactory {
 
-  private static ConnectionPool connectionPool;
-
-  public static Connection getConnection() throws DaoException {
-    if (connectionPool == null) {
-      connectionPool = ConnectionPool.getInstance();
-    }
-    return connectionPool.getConnection();
-  }
-
-  public static void close(Connection connection) throws DaoException {
-    connectionPool.close(connection);
-  }
-
   @Override
   public HumanDAO getHumanDAO() {
     return new HumanMySql();

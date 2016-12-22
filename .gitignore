@@ -4,5 +4,7 @@
 Faculty.iml
 target/*
 log/*
+out/*
 
 src/main/webapp/META-INF/
+lib/
